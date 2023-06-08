@@ -51,6 +51,28 @@ else{
       $leaveApplicationValidate = true;
     }
     
+    if(!empty($_POST["submit"])){
+      $username = $_POST["username"];
+      $email = $_POST["email"];
+      $absence = $_POST["absence"];
+      $fromdate = $_POST["fromdate"];
+      $todate= $_POST["todate"];
+      $reason = $_POST["reason"];
+      $toemail = "toluwanimioderinde@gmail.com";
+
+      $mailHeader = "Name:" . $username .
+      "\r\n Email: " . $email .
+      "\r\n Type Of Absence: " . $absence .
+      "\r\n From Date: " . $fromdate .
+      "\r\n To Date: " . $todate .
+      "\r\n Message: " . $reason .
+      "\r\n Email: " . $fromdate . "\r\n";
+
+      if(mail($toemail, $username, $mailHeader)){
+          $reason = "Your Application is Recieved Successfully";
+      }
+    }
+
     $status = "Pending";
     
     if($leaveApplicationValidate){
@@ -270,6 +292,10 @@ else{
         <!-- error message if reason of the leave is not given -->
         <span class="error"><?php echo "&nbsp;".$reasonErr ?></span>
         <textarea class="form-control" name="reason" id="leaveDesc" rows="4" placeholder="Enter Here..."></textarea>
+
+        <label for="leaveDesc" class="form-label"><b>Please Input your Email Address :</b></label>
+        <span class="error"><?php echo "&nbsp;".$reasonErr ?></span>
+        <textarea class="form-control" name="Email" id="leaveDesc" rows="4" placeholder="Enter Email..."></textarea>
       </div>
   
   
@@ -282,7 +308,7 @@ else{
   <footer class="footer navbar navbar-expand-lg navbar-light bg-light" style="color:white;">
     <div>
     <p class="text-center">&copy; <?php echo date("Y"); ?> - Online Leave Application</p>
-      <p class="text-center">Developed By Yash Sojitra and Darshan Mamtani</p>
+      <p class="text-center">Developed By Issa Oderinde</p>
     </div>
   </footer>
 
