@@ -238,34 +238,25 @@ error_reporting(E_ALL);
       <div class="col-5">
       <label for="city">City:</label>
       <select id="city" name="city">
-        <option>New York</option>
-        <option>Chicago</option>
-        <option>Seattle</option>
-        <option>Boston</option>
+        <option>Lagos</option>
+        <option>Port Harcourt</option>
+        <option>Abuja</option>
         <option>Miami</option>
-        <option>Austin</option>
-        <option>Los Angeles</option>
-        <option>Philadelphia</option>
-        <option>Atlanta</option>
-        <option>Nashville</option>
-        <option>San Diego</option>
-        <option>Tucson</option>
-        <option>Omaha</option>
-        <option>Memphis</option>
+        <option>Bonny</option>
       </select>
       </div>
   
       <div class="col-5">
       <label>Department : </label>
       <select name="Department">
-        <option>Engineering</option>
-        <option>Development</option>
-        <option>IT Support</option>
-        <option>HR</option>
-        <option>Test Team</option>
-        <option>Finance</option>
-        <option>Marketing and Sales</option>
-        <option>Customer Support</option>
+        <option>TD</option>
+        <option>MD</option>
+        <option>CM</option>
+        <option>CS</option>
+        <option>DD</option>
+        <option>PD</option>
+        <option>LG</option>
+        <option>ER</option>
       </select>
       </div>
   
@@ -285,7 +276,7 @@ error_reporting(E_ALL);
   <footer class="footer navbar navbar-expand-lg navbar-light bg-light" style="color:white;">
   <div>
     <p class="text-center">&copy; <?php echo date("Y"); ?> - Online Leave Application</p>
-      <p class="text-center">Developed By Yash Sojitra and Darshan Mamtani</p>
+      <p class="text-center">Developed By Issa Oderinde</p>
     </div>
   </footer>
 
